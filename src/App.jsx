@@ -1,4 +1,4 @@
-import { Box, ChakraProvider, Image, Text } from "@chakra-ui/react";
+import { Box, ChakraProvider, Text } from "@chakra-ui/react";
 
 function App() {
   return (
