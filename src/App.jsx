@@ -15,6 +15,9 @@ import img7 from "./assets/7.jpeg";
 import img9 from "./assets/9.jpeg";
 import img10 from "./assets/10.jpeg";
 import img11 from "./assets/11.jpeg";
+import Card from "./Card";
+import prachi from "./assets/prachi.jpeg";
+import meghavi from "./assets/meghavi.jpeg";
 
 function App() {
   return (
@@ -46,6 +49,31 @@ function App() {
           <Image src={img10} boxSize={80} />
           <Image src={img11} boxSize={80} />
         </HStack>
+        <Box mt={24} pb={100}>
+          <Text ml={4} fontSize={64} textAlign={"center"}>
+            Founders
+          </Text>
+          <HStack
+            style={{ alignItems: "center", justifyContent: "space-between" }}>
+            <Card name={"Prachi Kothari"} image={prachi} />
+            <Card name="Meghavi Kothari" image={meghavi} />
+          </HStack>
+        </Box>
+
+        {/* <Box mt={100}>
+          <Text ml={4} fontSize={38} textAlign={"center"}>
+            Created By
+          </Text>
+          <HStack
+            style={{ alignItems: "center", justifyContent: "space-between" }}>
+            <Text ml={4} fontSize={44} textAlign={"center"}>
+              Palak Kothari
+            </Text>
+            <Text ml={4} fontSize={44} textAlign={"center"}>
+              Dhanish Kothari
+            </Text>
+          </HStack>
+        </Box> */}
       </Box>
     </ChakraProvider>
   );
